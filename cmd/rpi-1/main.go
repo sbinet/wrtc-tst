@@ -305,16 +305,6 @@ func serve(conn net.Conn, sdp string) {
 		panic(err)
 	}
 
-	//	cmd, err = recv(conn)
-	//	if err != nil {
-	//		_ = send(conn, Cmd{Name: "error", Data: err.Error()})
-	//		panic(err)
-	//	}
-	//	if cmd.Name != "ok" {
-	//		log.Printf("invalid answer-reply: %+v", cmd)
-	//		panic("invalid answer-reply")
-	//	}
-
 	// Output the answer in base64 so we can paste it in browser
 	//fmt.Println(signal.Encode(*peerConnection.LocalDescription()))
 

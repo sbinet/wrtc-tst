@@ -33,18 +33,13 @@ window.startClick = () => {
 
 window.stopClick = () => {
     log("stopping...")
-//    var video = document.getElementById("video1");
-//    var stream = video.srcObject;
-//    if (stream != null && stream.active) {
-//        log("stopping... - 1")
-//        let trks = stream.getTracks();
-//        log("stopping... - 2")
-//
-//        trks.forEach(trk => trk.stop());
-//        log("stopping... - 3")
-//        video.srcObject = null;
-//        log("stopping... - 4")
-//    }
+    var video = document.getElementById("video1");
+    var stream = video.srcObject;
+    if (stream != null && stream.active) {
+        let trks = stream.getTracks();
+        trks.forEach(trk => trk.stop());
+        video.srcObject = null;
+    }
 
     conn.send(JSON.stringify({
         name: 'stop',
