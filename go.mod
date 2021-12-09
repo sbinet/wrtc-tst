@@ -1,9 +1,12 @@
-module wrtc
+module github.com/sbinet/wrtc-tst
 
 go 1.18
 
 require (
 	github.com/gorilla/websocket v1.4.2
+	github.com/pion/interceptor v0.1.2
+	github.com/pion/rtcp v1.2.9
+	github.com/pion/rtp v1.7.4
 	github.com/pion/webrtc/v3 v3.1.11
 )
 
@@ -12,12 +15,9 @@ require (
 	github.com/pion/datachannel v1.5.2 // indirect
 	github.com/pion/dtls/v2 v2.0.10 // indirect
 	github.com/pion/ice/v2 v2.1.14 // indirect
-	github.com/pion/interceptor v0.1.2 // indirect
 	github.com/pion/logging v0.2.2 // indirect
 	github.com/pion/mdns v0.0.5 // indirect
 	github.com/pion/randutil v0.1.0 // indirect
-	github.com/pion/rtcp v1.2.9 // indirect
-	github.com/pion/rtp v1.7.4 // indirect
 	github.com/pion/sctp v1.8.0 // indirect
 	github.com/pion/sdp/v3 v3.0.4 // indirect
 	github.com/pion/srtp/v2 v2.0.5 // indirect
