@@ -86,7 +86,7 @@ conn.onmessage = evt => {
     }
     switch (msg.name) {
         case 'answer':
-            answer = JSON.parse(msg.data)
+            var answer = JSON.parse(msg.data)
             if (!answer) {
                 return console.log('failed to parse answer')
             }
